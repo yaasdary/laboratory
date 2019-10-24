@@ -1,0 +1,26 @@
+using namespace std;
+ 
+#include <iostream>
+ 
+int main()  {
+ int  N,i,k,j;
+ cout << "N: ";  cin >> N;
+ int* A = new int[N];
+ cout << "Элементы массива A: " << endl;
+ for (i=0; i<N; i++) {
+ cout << "A[" << i << "]:";
+  cin >> A[i];
+ }
+ cout << "Получившаяся матрица: " << endl;
+ for (i=1; i<N; i++) {
+ 	if (A[i-1]>A[i]) { 
+ 	 A[i-1]=A[i]+A[i-1];
+     A[i]=A[i-1]-A[i];
+     A[i-1]=A[i-1]-A[i];
+  }
+ }
+ for (i=0; i<N; i++) {
+ 	cout << "A[" <<  i << "]: " << A[i] << endl;
+ }
+ return 0;
+}
