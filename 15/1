@@ -1,0 +1,35 @@
+using namespace std;
+ 
+#include <iostream>
+ 
+int main()  {
+ int N, i, j;
+ cout << "N: ";  cin >> N;
+ int* A = new int[N];
+ cout << "Элементы массива A: " << endl;
+ for (i=0; i<N; i++) {
+ cout << "A[" << i << "]:";
+  cin >> A[i];
+ }
+ int* B = new int[N];
+ cout << "Элементы массива B: " << endl;
+ for (i=0; i<N; i++) {
+ cout << "B[" << i << "]:";
+  cin >> B[i];
+ }
+ int* C = new int[N];
+ for (i=0; i<N; i++) {
+     C[i]=A[i];
+ }
+ cout << "Новая матрица А: " << endl;
+ for (i=0; i<N; i++) {
+     A[i]=B[i];
+     cout << "A[" <<  i << "]" << A[i] << endl;
+ }
+  cout << "Новая матрица B: " << endl;
+ for (i=0; i<N; i++) {
+     B[i]=C[i];
+     cout << "B[" <<  i << "]" << B[i] << endl;
+ }
+ return 0;
+}
