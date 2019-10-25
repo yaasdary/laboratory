@@ -1,0 +1,16 @@
+using namespace std; 
+ 
+#include <iostream> 
+#include <cmath>
+
+int main()  { 
+ int N, i, k, a, D;
+ cout << "N, A, D: " << endl;
+ cin >> N >> a >> D;
+ int* A = new int[N]; 
+ for (i=0; i<N; i++) {
+ 	A[i]=a*pow(D,i);
+ 	cout<< " " << A[i] << endl;
+ }
+ return 0;
+ }
