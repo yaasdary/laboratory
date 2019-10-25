@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int A, B,i,j;
+	cout << "A="; cin >> A;
+	cout << "B="; cin >> B;
+	for (i=A; i<=B; i++) {
+		for (j=1; j<=i; j++) {
+			cout << i << endl;
+		}
+	}
+	return 0;
+}
