@@ -1,0 +1,16 @@
+using namespace std; 
+ 
+#include <iostream> 
+ 
+int main()  { 
+ int N, i;
+ cout << "Введите размер массива: "; 
+ cin >> N; 
+ int* A = new int[N]; 
+ for (i=0; i<=N;i++) {
+ 	A[0]=1;
+ 	A[i+1]=A[i]+2;
+ 	cout << A[i] << endl;
+ }
+ return 0;
+}
