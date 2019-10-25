@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+double RingS ( double r1, double r2) {
+	double s1, s2;
+	s1=3.14*r1*r1;
+	s2=3.14*r2*r2;
+	return s1-s2;
+}
+int main () {
+	double r1, r2;
+	for (int i=1; i<4; i++) {
+	cout << "R1, R2: " << endl;
+	cin >> r1 >> r2;
+	if (r1<r2) {cout << "Радиус внешнего кольца меньше радиуса внутреннего"<< endl;}
+	else {cout << RingS (r1,r2) << endl;}
+	}
+	
+	return 0;
+}
