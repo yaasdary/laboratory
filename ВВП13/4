@@ -1,0 +1,23 @@
+using namespace std; 
+ 
+#include <iostream> 
+#include <cmath>
+
+int main()  { 
+ int N, i, a;
+ cout << "N: " << endl;
+ cin >> N ;
+ int* A = new int[N]; 
+ for (i=0; i<N; i++) {
+ 	cin >> A[i];
+ }
+ a=0;
+ for (i=0; i<N; i++) {
+ 	if (i%2==1) { 
+ 	cout << " " << A[N-1-a] << endl;
+ 	a++;
+ 	}
+ 	else { cout << " " << A[i-a] << endl; }
+ }
+ return 0;
+}
