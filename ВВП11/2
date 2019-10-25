@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,c;
+	cout << "A=";
+	 cin >>a;
+	cout << "B=";
+	 cin >>b;
+	while (a>b) {
+		a=a-b;
+		c=c+1;
+}
+cout << "Количество отрезков В в А - " <<c;
+return 0;
+}
