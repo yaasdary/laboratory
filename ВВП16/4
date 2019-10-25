@@ -1,0 +1,29 @@
+using namespace std;
+
+#include <iostream>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int  N, i, c;
+	cout << "N: ";  cin >> N;
+	int* A = new int[N];
+	int* B = new int[N + 2];
+	c = 0;
+	cout << "Элементы массива A: " << endl;
+	for (i = 0; i < N; i++) {
+		cout << "A[" << i << "]:";
+		cin >> A[i];
+	}
+	for (i = 0; i < N; i++) {
+		if (A[i] < 0) {
+			B[i + c] = A[i];
+			B[i + c + 1] = 0;
+			c++;
+		}
+		else { B[i + c] = A[i]; }
+	}
+	cout << "Преобразованный массив: " << endl;
+	for (i = 0; i < N+c; i++) {
+		cout << "B[" << i  << "]: " << B[i] << endl;
+	}
+	return 0;
+}
