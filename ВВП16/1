@@ -1,0 +1,26 @@
+using namespace std;
+
+#include <iostream>
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int  N, i, k;
+	cout << "N: ";  cin >> N;
+	int* A = new int[N];
+	int* B = new int[N];
+	cout << "Элементы массива A: " << endl;
+	for (i = 0; i < N; i++) {
+		cout << "A[" << i << "]:";
+		cin >> A[i];
+	}
+	k = 0;
+	for (i = 0; i < N; i++) {
+		if (A[i] != A[i + 1]) {
+			B[k++] = A[i];
+		}
+	}
+	cout << "Получившаяся матрица: " << endl;
+	for (i = 0; i < k; i++) {
+		cout << "B[" << i << "]: " << B[i] << endl;
+	}
+	return 0;
+}
