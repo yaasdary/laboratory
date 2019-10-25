@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int k,n,i;
+	cout << "N="; cin >> n;
+	i=0; k=0;
+	while (i<n) {
+		k++;
+		i+=k;
+	}
+	cout << "Сумма - "<< i << endl;
+	cout << "K=" << k;
+	return 0;
+}
