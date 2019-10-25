@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+double Fact2 ( int N) {
+	int f=1;
+	if (N%2==0) {
+		for (int i=2; i<=N; i+=2) {f*=i;}
+}
+else { 
+for (int i=1; i<=N; i+=2) {f*=i;}
+}
+return f;
+}
+int main() {
+	int N;
+	cout << "N:" ; cin>> N;
+	cout << "N!! : " << Fact2(N);
+	return 0;
+}
