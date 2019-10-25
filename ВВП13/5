@@ -1,0 +1,20 @@
+using namespace std; 
+ 
+#include <iostream> 
+ 
+int main()  { 
+ int N, i;
+ cout << "N: ";  cin >> N; 
+ int* A = new int[N]; 
+ for (i = 0; i < N; i++) { 
+  cin >> A[i]; 
+ }
+ cout << " ";
+ for (i=1; i<N; i=i+2) {
+ 	cout << "A["<<i<<"]:"<<A[i]<<endl;
+ }
+ for (i=0; i<N; i=i+2) {
+ 	cout << "A["<<i<<"]:"<<A[i]<<endl;
+ }
+ return 0;
+}
