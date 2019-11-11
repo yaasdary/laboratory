@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int  N, i, j, K, a, b, c, d;
+	cout << "N: ";  cin >> N;
+	cout << "K: ";  cin >> K;
+	int* A = new int[N];
+	int* B = new int[N];
+	cout << "Элементы массива A: " << endl;
+	for (i = 0; i < N; i++) {
+		cout << "A[" << i << "]:";
+		cin >> A[i];
+	}
+	a = 1;
+	b = 0;
+	d = (K == 1 ? 1 : 0);
+	j = -1;
+	for (i = 1; i < N; i++) {
+		if (A[i - 1] != A[i]) {
+			a++;
+			if (a == K) b = i;
+			c = i;
+		}
+		if (a == K) d++;
+	}
+	for (i = 0; i < b; i++)  B[++j] = A[i];
+
+	for (i = c; i < N; i++) B[++j] = A[i];
+
+	for (i = b + d; i < c; i++)  B[++j] = A[i];
+
+	for (i = b; i < b + d; i++)  B[++j] = A[i];
+
+	for (i = 0; i < N; i++) A[i] = B[i];
+	cout << "Результат:" << endl;
+	for (i = 0; i < N; i++)
+	{
+		cout << "B[" << i  << "]: " << A[i] << endl;
+	}
+	return 0;
+}
