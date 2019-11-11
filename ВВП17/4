@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int  N, i, x, y, x1, y1, n;
+	double R, max = 0;
+	cout << "Введите количество точек: " << endl;
+	cin >> N;
+	for (  i = 0; i < N ; i++) {
+		cout << "Введите координаты точки: ";
+		cin >> x >> y;
+		if (x < 0 && y>0) {
+			R = sqrt(pow(x, 2) + pow(y, 2));
+				if (R > max) {
+					max = R;
+					x1 = x;
+					y1 = y;
+					n = i;
+			}
+		}
+	}
+	cout << "Максимально удаленная точка :" << endl;
+	if (max > 0) {
+		cout << "N[" << n << "](" << x1 << ";" << y1 << ")";
+	}
+	else { cout << "0"; }
+	return 0;
+}
