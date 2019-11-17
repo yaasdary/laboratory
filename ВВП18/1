@@ -1,0 +1,42 @@
+using namespace std;
+
+#include <iostream> 
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int M, i, j, k;
+	cout << "M: "; cin >> M;
+	int** A = new int* [M];
+	cout << "Элементы массива: " << endl;
+	for (i = 0; i < M; i++) {
+		A[i] = new int[M];
+		for (j = 0; j < M; j++) {
+			cout << "A[" << i << "][" << j << "]:";
+			cin >> A[i][j];
+		}
+	}
+	cout << endl;
+	cout << "Вывод: " << endl;
+	for (k = 0; k < (M / 2 + 1); k++) {
+		for (i = k; i < M - k; i++) {
+			cout << A[i][k] << "\t";
+		}
+		i--;
+		for (j = k + 1; j < M - k; j++) {
+			cout << A[i][j] << "\t";
+		}
+		j--;
+		for (i = M - k - 2; i >= k; i--)
+		{
+			cout << A[i][j] << "\t";
+		}
+		i++;
+		for (j = M - k - 2; j > k; j--)
+		{
+			cout << A[i][j] << "\t";
+		}
+		j++;
+	
+	}
+	return 0;
+}
