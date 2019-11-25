@@ -1,0 +1,19 @@
+using namespace std;
+
+#include <string>
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	char C;
+	string S;
+	cout << "Введите строку S: ";
+	getline(cin, S);
+	cout << "Введите символ С: ";
+	cin >> C;
+	for (int i = S.size(); i >=0; i--) {
+		if (S[i]==C) { S.insert(i, 1, C); }
+	}
+	cout << "Получившаяся строка: " << S << endl;
+	return 0;
+}
