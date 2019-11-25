@@ -1,0 +1,17 @@
+using namespace std;
+
+#include <string>
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	string S;
+	int k = 0;
+	cout << "Введите строку S: ";
+	getline(cin, S);
+	for (int i = 0; i <= S.size(); i++) {
+		if (S[i] >= 'A' && S[i] <= 'Z') { k++; }
+	}
+	cout << "Количество латинских букв в строке - " << k << endl;
+	return 0;
+}
