@@ -1,0 +1,15 @@
+using namespace std;
+
+#include <string>
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	string S;
+	cout << "Введите строку S: ";
+	getline(cin, S);
+	for (int i = 0; i <= S.size(); i++) {
+		cout << S[i] << " ";
+	}
+	return 0;
+}
