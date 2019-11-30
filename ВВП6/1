@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main () {
+ int N,a,b;
+ cout « "N=";
+ cin » N;
+ if (N/60 == 0) {
+ cout « "С последней минуты прошло 0 секунд";
+ }
+ else {
+ a=N%60;
+ }
+ cout « a;
+ return 0;
+}
