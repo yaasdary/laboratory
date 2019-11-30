@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,a,b;
+	cout << "n=";
+	cin >> n;
+	a=n/100;
+	b=n/10-a*10;
+	if ( (a<b && b<n%10) || (a>b && b>n%10)) {
+		cout << "Выражение истинно";
+	}
+	else { cout <<"Выражение ложно"; }
+	return 0;
+}
