@@ -1,0 +1,30 @@
+#include <iostream>
+#include <windows.h>
+#include <string>
+#include <fstream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	fstream file;
+	string S;
+	char ch(32);
+	int k;
+	file.open("C:\\.vs\\Файлы\\5.txt");
+	if (file) {
+		getline(file, S, '\0');
+		k = 0;
+		for (int i = 4; i < S.size(); i++)
+		{
+			if (S[i - 4] == ' ' && S[i - 3] == ' ' && S[i - 2] == ' ' && S[i - 1] == ' ' && S[i] == ' ')
+			{
+				k++;
+			}
+		}
+	}
+	else { cout << "Файл не открыт"; }
+	cout << "Количество абзацев: " << k;
+	return 0;
+}
