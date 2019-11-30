@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+ int n,a;
+ cout « "n=";
+ cin » n;
+ a=(n-1)/100 + 1;
+ cout « a;
+ return 0;
+}
