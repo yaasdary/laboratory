@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main () {
+	int A, b,c;
+	cout << "A=";
+	cin >> A;
+	b=A*A;   //a^2//
+	c=b*A; //a^3//
+	A=c*c; //a^6//
+	b=A*A; //a^12//
+	A=b*c; //a^15//
+	cout << "A^15=" << A;
+	return 0;
+}
