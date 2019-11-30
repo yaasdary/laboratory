@@ -1,0 +1,22 @@
+using namespace std;
+
+#include <string>
+#include <windows.h>
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	string S;
+	int k = 0;
+	cout << "Введите строку S: ";
+	getline(cin, S);
+	for (int i = 0; i < S.size(); i++) {
+		if (S[i] == 'а' || S[i] == 'о' || S[i] == 'и' || S[i] == 'е' || S[i] == 'ё' || S[i] == 'э' || S[i] == 'ы' || S[i] == 'у' || S[i] == 'ю' || S[i] == 'я') {
+			k++;
+		}
+	}
+	cout << "Количесвто гласных букв: " << k << endl;
+	return 0;
+}
