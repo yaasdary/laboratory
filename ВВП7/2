@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+ double A,B, C;
+ cout << "A=";
+ cin >> A;
+ cout << "B=";
+ cin >> B;
+ cout << "C=";
+ cin >> C;
+ if (A<B && B<C) {
+ cout << "Высказывание истинно";
+ }
+ else {
+ cout << "Высказыание ложно";
+ }
+ return 0;
+}
