@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+	int N,i;
+	double A,s,p;
+	cout << "A="; cin >> A;
+	cout << "N="; cin >> N;
+	p=1; s=1;
+	for (i=1; i<=N; i++) {
+		p=-p*A;
+		s=s+p;
+	}
+	cout << s;
+	return 0;
+}
