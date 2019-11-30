@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	double Ar, Ad, pi;
+	cout << "Ar=";
+	cin >> Ar;
+	pi=3.14;
+	Ad= Ar*180 / pi;
+	cout << "Ad=" << Ad<<"°";
+	return 0;
+}
