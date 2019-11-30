@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	double N,i,j,P;
+	cout << "N="; cin >> N;
+	P=1;
+	for (i=1; i<=N; i+=0.1) {
+		P=P*i;
+	}
+	P=P*N;
+	cout << "p=" << P;
+	return 0;
+}
