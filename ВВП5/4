@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main () {
+	int N,a,b,c,d;
+	cout << "N=";
+	cin >> N;
+	a=N%10;
+	b=(N-a)/10;
+	c=a*10+b;
+	cout << c;
+	return 0;
+}
