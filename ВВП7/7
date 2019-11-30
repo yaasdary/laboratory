@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c;
+	cout << "a=";
+	cin >> a;
+	cout << "b=";
+	cin >> b;
+	cout << "c=";
+	cin >> c;
+	if ( c<a+b && b<c+a && a<b+c) {
+		cout <<"Треугольник существует";
+	}
+	else { cout << "Треугольник не существует"; }
+	return 0;
+}
