@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+ int K,N,a;
+ cout « "K=";
+ cin » K;
+ cout « "N=";
+ cin » N;
+ a=K%7+(N-1);
+ cout « a « " день недели";
+ return 0;
+}
