@@ -10,19 +10,18 @@ int main()
 	SetConsoleOutputCP(1251);
 	fstream file;
 	string S;
-	int i, N, j, m = 0, t;
 	file.open("C:\\.vs\\Файлы\\1.txt");
 	if (file)
 	{
 		while ( !file.eof() )
 		{
 			getline(file, S, '\0');
-			for (i = S.find(32) + 1; i <= S.size(); i++)
+			for (int i = S.find(32) + 1; i <= S.size(); i++)
 				file << S[i];
 		}
 		file.close();
 		file.open("C:\\.vs\\Файлы\\1.txt", ios::out);
-		for (i = S.find(32) + 1; i <= S.size(); i++)
+		for (int i = S.find(32) + 1; i <= S.size(); i++)
 			file << S[i];
 		file.close();
 		cout << "Программа выполнена";
