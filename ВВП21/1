@@ -1,0 +1,28 @@
+using namespace std;
+
+#include <string>
+#include <iostream>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	string S;
+	int k = 0; int n = 0;
+	cout << "Введите строку S: ";
+	getline(cin, S);
+	int i = 0;
+	while (S[i] == ' ' && S[i] != '\0')
+		i++;
+	k = 0;
+	while (S[i] != '\0') {
+		if (S[i] != ' ' && k == 0)
+		{
+			k = 1;
+			n++;
+		}
+		else if (S[i] == ' ')
+			k = 0;
+		i++;
+	}
+	cout << "Количество слов в строке " << n;
+	return 0;
+}
