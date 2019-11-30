@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,c,d,e;
+	cout << "A=";
+	 cin >>a;
+	cout << "B=";
+	 cin >>b;
+	 e=a;
+	while (a>b) {
+		a=a-b;
+		c=c+1;
+}
+d=e-(c*b);
+cout << "Оставшая часть отрезка А - " <<d;
+return 0;
+}
