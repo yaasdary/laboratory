@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,a,b,c;
+	cout << "n=";
+	cin >> n;
+	a=n/1000;
+	b=n/100-a*10;
+	c=n/10-a*100-b*10;
+	if ( a==n%10 && b==c ) { 
+	cout << "Высказывание истинно"; 
+	}
+	else {cout << "Высказывание ложно";}
+	return 0;
+}
