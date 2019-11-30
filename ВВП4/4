@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int v1,v2,v,S,s,t;
+	cout <<"V1=";
+	cin >> v1;
+	cout << "V2=";
+	cin >> v2;
+	cout << "S=";
+	cin >> S;
+	cout << "T=";
+	cin >> t;
+	s=S+t*(v1+v2);
+	cout << "Расстояние станет равным " << s << " км";
+	return 0;
+}
