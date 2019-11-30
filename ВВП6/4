@@ -1,0 +1,18 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int main () {
+ int A,B,C,d,e,S;
+ cout « "A=";
+ cin » A;
+ cout « "B=";
+ cin » B;
+ cout « "C=";
+ cin » C;
+ d=A*B/pow(C,2);
+ e=A*B-d*pow(C,2);
+ cout « "Количество квадратов - " « d « endl;
+ cout « "Незанятая часть - " « e;
+ return 0;
+}
