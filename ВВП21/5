@@ -22,7 +22,8 @@ int main()
 				n = j;
 			}
 		}
-	for (int i = n; i <= k; i++)
+	for (int i = n; i <= k; i++) {
 		cout << S[i];
+	}
 	return 0;
 }
