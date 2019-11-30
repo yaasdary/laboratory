@@ -3,6 +3,7 @@ using namespace std;
 #include <iostream>
  
 int main()  {
+setlocale(LC_ALL, "Russian");
  int  i;
  double N, k;
  cout << "N: ";  cin >> N;
