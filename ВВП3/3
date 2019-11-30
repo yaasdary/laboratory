@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int A,B,C,d,e;
+	cout << "A=";
+	 cin >> A;
+     cout << "B=";
+     cin >> B;
+     cout << "C=";
+     cin >> C;
+     d=A;
+     e=B;
+     B=C;
+     C=d;
+     A=e;
+     cout << "A=" << A << endl;
+     cout << "B=" << B << endl;
+     cout << "C=" << C;
+}
