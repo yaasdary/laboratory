@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+setlicale(LC_ALL, "Russian");
+	double x1,y1,x2,y2,x3,y3,ab,ac;
+	cout << "Координаты точки A:x1="; cin >> x1;
+	cout << "y1="; cin >> y1;
+	cout << "Координаты точки B:x2="; cin >> x2;
+	cout << "y2="; cin >> y2;
+	cout << "Координаты точки C:x3="; cin >> x3;
+	cout << "y3="; cin >> y3;
+	ab=sqrt( pow((x2-x1),2) + pow ((y2-y1),2));
+	ac=sqrt( pow((x3-x1),2) + pow ((y3-y1),2));
+	if (ac<ab) {
+		cout << "С"<<endl;
+		cout << "AC=" << ac;
+	}
+	else if (ab<ac) {
+		cout << "B" << endl;
+		cout << "AB=" << ab;
+	}
+	return 0;
+}
