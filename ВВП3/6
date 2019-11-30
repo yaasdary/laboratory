@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main () {
+	int A, b;
+	cout << "A=";
+	cin >> A;
+	b=A*A;
+	A=b*b;
+	b=A*A;
+	cout << "A^8=" << b;
+	return 0;
+}
