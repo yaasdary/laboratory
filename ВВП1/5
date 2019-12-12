@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+setlocale(LC_ALL, "Russian");
+	double a, b, sum, razn, pr, chast;
+	cin >> a >> b;
+        if ((a == 0) || (b == 0)) { cout << "Нет решений"; } 
+        else{
+	sum = abs(a)+abs(b);
+	razn = abs(a)-abs(b);
+	pr = abs(a)*abs(b);
+	chast = abs(a) / abs(b);
+	cout << "sum=" << sum << " " << "razn=" << razn << " " << "pr=" << pr << " " << "chast=" << chast;
+        }
+	return 0;
+}
