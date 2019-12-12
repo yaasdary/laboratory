@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+setlocale(LC_ALL, "Russian");
 	int v1,v2,v,S,s,t;
 	cout <<"V1=";
 	cin >> v1;
