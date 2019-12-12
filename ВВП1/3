@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double a,b,sr;
+  cout << "a,b: ";
+	cin >> a >>b;
+	sr=(a+b)/2;
+	cout << "sr=" << sr;
+	return 0;
+}
