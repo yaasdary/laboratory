@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double A, B, C, BC, AC;
+  cout << "A, B, C: "
+	cin >> A >> B >> C;
+	if (A >= C) { AC = A - C;}
+  else {
+		AC = C - A;
+	}
+	if (B >= C) { BC = B - C;}
+  else {
+		BC = C - B;
+	}
+	cout << "AC=" << AC << " " << "BC=" << BC;
+	return 0;
+}
